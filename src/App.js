@@ -3,10 +3,9 @@ import { useState, useRef, useEffect } from "react";
 
 const sense_radius = 60;
 const screensize = 400;
-const turn_factor = .01;
+const turn_factor = 0.01;
 const bird_height = 24;
 const bird_width = 12;
-const cohesion_damp = 0.001;
 
 function degrees_to_radians(degrees) {
   var pi = Math.PI;
@@ -83,9 +82,8 @@ function App() {
       let newHeading;
       // Alignment
       let deltaHeading = turn_factor * (bird.heading - average.heading);
-      deltaHeading = Math.min(3, Math.max(-3, deltaHeading))
-      newHeading =
-        bird.heading + deltaHeading;
+      deltaHeading = Math.min(3, Math.max(-3, deltaHeading));
+      newHeading = bird.heading + deltaHeading;
 
       return {
         id: bird.id,
