@@ -1,6 +1,14 @@
-# Getting Started with Create React App
+# React-Flocking
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple trial of react showcasing 'flocking' behaviour, there is only a hlaf baked alignment rule but the result seems to render correctly. 
+
+### TIL:
+    - Hooks (useCase, useRef, ..)
+    - How to use requestAnimationFrame with useEffect, based on [this handy tutorial](https://css-tricks.com/using-requestanimationframe-with-react-hooks/)
+    - function based components
+    - JS weirdness
+
 
 ## Available Scripts
 
