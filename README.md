@@ -8,7 +8,7 @@ A simple trial of react showcasing 'flocking' behaviour, there is only a hlaf ba
 - How to use requestAnimationFrame with useEffect, based on [this handy tutorial](https://css-tricks.com/using-requestanimationframe-with-react-hooks/)
 - function based components
 - JS weirdness
-- How to setup github actions
+- How to setup github actions using [this tutorial](https://codeburst.io/deploying-a-react-app-using-github-pages-and-github-actions-7fc14d380796)
 
 
 ## Available Scripts
