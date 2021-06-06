@@ -1,7 +1,7 @@
 import "./App.css";
 import { useState, useRef, useEffect } from "react";
 
-const sense_radius = 60;
+const sense_radius = 100;
 const screensize = 400;
 const turn_factor = 0.01;
 const bird_height = 24;
@@ -64,9 +64,9 @@ function App() {
           { x: 0, y: 0, heading: 0 }
         );
         return {
-          x: totals.x / bird_nbs.length + 1,
-          y: totals.y / bird_nbs.length + 1,
-          heading: totals.heading / bird_nbs.length + 1,
+          x: totals.x / bird_nbs.length,
+          y: totals.y / bird_nbs.length,
+          heading: totals.heading / bird_nbs.length,
         };
       } else {
         return null;
@@ -134,6 +134,7 @@ function App() {
   useEffect(() => {
     requestRef.current = requestAnimationFrame(animate);
     return () => cancelAnimationFrame(requestRef.current);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
